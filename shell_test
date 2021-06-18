@@ -1,0 +1,2 @@
+#!/bin/bash
+ if [[ -e sorte ]] ; then echo " i will push" ; fi 
