@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'hello'
+echo "the filename is $0\nand the arg[1] is $1"
