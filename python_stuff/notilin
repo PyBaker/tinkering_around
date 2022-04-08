@@ -1,4 +1,17 @@
 #!/usr/bin/env python3
 
-import subprocess 
-subprocess.run(['ls', '-la'])
+import files
+import subprocess
+
+
+list_of_files = subprocess.run(['notify-send', 'Hello Worrrrld', '-i', files.neticon], capture_output=True, text=True)
+
+# print(f"The returncode is {list_of_files.returncode}")
+if list_of_files.returncode == 0:
+    subprocess.call(['aplay', '-q', files.notif1_sound])
+else:
+    print("what's up ????, i'm not sure lol")
+    quit()
+
+# print(list_of_files.stdout)
+# print(list_of_files)
