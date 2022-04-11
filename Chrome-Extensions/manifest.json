@@ -1,0 +1,10 @@
+{
+    "name": "Getting Started with Extensions",
+    "description": "Build an Extendion !!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png"
+    }
+}
